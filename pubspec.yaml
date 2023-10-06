@@ -10,6 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  auth_module:
+    git:
+      url: https://github.com/KrittapatBigC/test_auth.git
 
 dev_dependencies:
   flutter_test:
