@@ -10,9 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  cupertino_icons: ^1.0.2
   auth_module:
     git:
       url: https://github.com/KrittapatBigC/test_auth.git
+  flutter_dotenv: ^5.1.0
 
 dev_dependencies:
   flutter_test:
@@ -26,7 +28,9 @@ dev_dependencies:
 flutter:
 
   # To add assets to your package, add an assets section, like this:
-  # assets:
+   assets:
+     - .env.uat
+     - .env.sit
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   #

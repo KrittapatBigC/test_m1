@@ -2,6 +2,7 @@ library module_1;
 import 'package:auth_module/auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// A Calculator.
 class Calculator {
@@ -28,4 +29,14 @@ class Content {
       child: const Text("Throw Test Exception"),
     );
   }
+
+  Future<void> loadEnv(String envPath) async {
+    // await dotenv.load(fileName: '.env.sit');
+    await dotenv.load(fileName: envPath);
+  }
+
+  String getEnv(String param) {
+    return dotenv.env[param] ?? "";
+  }
+
 }

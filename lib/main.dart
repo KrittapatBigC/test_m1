@@ -64,6 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     Calculator().mul(3, 6);
 
+    print(Content().getEnv("API_URL"));
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
@@ -76,6 +77,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    Content().loadEnv('.env.sit');
+    // content.getEnv(".env.sit");
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
