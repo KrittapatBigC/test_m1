@@ -1,9 +1,12 @@
+library module_1;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:module_1/test1_provider.dart';
 import 'package:provider/provider.dart';
 
 class Test1Page extends StatelessWidget {
+  const Test1Page({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
